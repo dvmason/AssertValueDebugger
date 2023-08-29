@@ -21,7 +21,7 @@ To install the code into a Pharo 12 image:
 EpMonitor disableDuring: [ 
     Metacello new
       baseline: 'AssertValueDebugger';
-      repository: 'github://dvmason/AssertValueDebugger/src';
+      repository: 'github://dvmason/AssertValueDebugger:main/src';
       load ].
 ```
 
