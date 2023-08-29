@@ -12,7 +12,7 @@ BaselineOfAssertValueDebugger >> baseline: spec [
 		spec
 			package: 'AssertValue-Debugger';
 			package: 'AssertValue-Debugger-Tests'
-			with: [ spec requires: #( #'AssertValue-Debugger' ) ].
+			with: [ spec requires: #( 'AssertValue-Debugger' ) ].
 
 		spec
 			group: 'Core' with: #( 'AssertValue-Debugger' );
