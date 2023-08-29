@@ -18,7 +18,7 @@ To install the code into a Pharo 12 image:
 ```smalltalk
 EpMonitor disableDuring: [ 
     Metacello new
-      baseline: 'DataFrame';
+      baseline: 'AssertValueDebugger';
       repository: 'github://dvmason/AssertValueDebugger/src';
       load ].
 ```
