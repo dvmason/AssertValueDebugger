@@ -18,11 +18,11 @@ This is only a small idea, but it reduces the friction of writing tests, and eve
 
 To install the code into a Pharo 12 image:
 ```smalltalk
-"EpMonitor disableDuring: [ 
+EpMonitor disableDuring: [ 
     Metacello new
       baseline: 'AssertValueDebugger';
       repository: 'github://dvmason/AssertValueDebugger:main/src';
-      load ]." not working
+      load ].
 ```
 
 The idea came from [My Kind of REPL](https://ianthehenry.com/posts/my-kind-of-repl/) and I got tons of help from Steven Costiou and Valentin Bourcier. Thanks!
