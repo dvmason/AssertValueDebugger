@@ -10,7 +10,8 @@ BaselineOfAssertValueDebugger >> baseline: spec [
 	<baseline>
 	spec for: #common do: [
 		spec
-			package: 'AssertValue-Debugger';
+			package: 'AssertValue-Commands';
+			package: 'AssertValue-Debugger' with: [ spec requires: #('AssertValue-Commands')];
 			package: 'AssertValue-Debugger-Tests'
 			with: [ spec requires: #( 'AssertValue-Debugger' ) ].
 
