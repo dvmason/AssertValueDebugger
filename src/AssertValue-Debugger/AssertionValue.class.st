@@ -23,7 +23,7 @@ AssertionValue >> isHandleableBy: aDebugger [
 { #category : #accessing }
 AssertionValue >> messageText [
 
-	^ self result printString
+	^ self result valuePrintString
 ]
 
 { #category : #accessing }

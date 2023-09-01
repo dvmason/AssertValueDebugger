@@ -35,3 +35,17 @@ AssertionValueTest >> testString2 [
 	self try: 42 asString. "with comment"
 	self try: (6 * 7) asString
 ]
+
+{ #category : #tests }
+AssertionValueTest >> testValuePrintString [
+
+	self assert: 42 valuePrintString equals: '42'.
+	self assert: '42' valuePrintString equals: '''42'''.
+	self assert: #( 42 56 ) valuePrintString equals: '#(42 56)'.
+	self
+		assert: (AssertionValueTestClass new
+				 abc: 42;
+				 def: 3 @ 4) valuePrintString
+		equals:
+		'(AssertionValueTestClass new abc:42;def:(Point x:3 y:4))'
+]
