@@ -14,6 +14,8 @@ test1
 
 When you run the test, an exception will be raised, a debugger window will be raised with the first example, and the `'some complex string'` will be highlighted. If you are happy with that, click on the `Save & Go` button and it will be compiled and it will proceed with the test(s). If you're not happy, you can edit or abandon as you usually would in the debugger.
 
+The result value isn't always a legitimate expression that creates the value, but it tries, using an Extension to Object called `valuePrintOn:`, so if it doesn't create a proper value for your class, you can simply implement that.
+
 This is only a small idea, but it reduces the friction of writing tests, and every little bit of friction saved increases the likelyhood of you writing tests. If you write 5 more tests a day, that will make your life better!
 
 To install the code into a Pharo 12 image:
